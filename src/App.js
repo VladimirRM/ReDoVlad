@@ -19,10 +19,17 @@ const  handleToggle = ()=>{
   return (
     <div className="App">
       <header>
-        <h1>Todo List</h1>
-      <ToDo />
-      <ToDoForm />
+        <h1>Todo List:{todos.length}</h1>
       </header>
+      <ToDoForm  addTask={addTask}/>
+      {todos.map((todo)=>{
+        return(
+          <ToDo
+          key={todos.od}/>
+        )}
+       ) }
+     
+      
     </div>
   );
 }
