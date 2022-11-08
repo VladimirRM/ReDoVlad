@@ -24,8 +24,10 @@ const  handleToggle = ()=>{
       <ToDoForm  addTask={addTask}/>
       {todos.map((todo)=>{
         return(
-          <ToDo
+          <ToDo todo={todo}
           key={todos.od}/>
+          toggleTask={handleToggle}
+          removeTask={removeTask}
         )}
        ) }
      
