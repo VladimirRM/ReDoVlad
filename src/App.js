@@ -9,11 +9,20 @@ function App() {
 const  addTasks = ()=>{
   
 }
+const  removeTasks = ()=>{
+
+}
+const  handleToggle = ()=>{
+
+}
 
   return (
     <div className="App">
+      <header>
+        <h1>Todo List</h1>
       <ToDo />
       <ToDoForm />
+      </header>
     </div>
   );
 }
