@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 const ToDoForm = () => {
   const [userInput, setUserInput] = useState("");
-  const handleSubmit = () => {};
   const handleChange =()=>{
-
+    setUserInput(e.currentTarget.value)
   }
+  const handleSubmit = () => {};
 const handleKeyPress =()=>{
 
   }
