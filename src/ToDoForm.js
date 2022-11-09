@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ToDoForm = () => {
+const ToDoForm = ({addTask}) => {
   const [userInput, setUserInput] = useState("");
   const handleChange =()=>{
     setUserInput(e.currentTarget.value)
