@@ -6,8 +6,15 @@ import ToDoForm from "./ToDoForm";
 function App() {
   const [todos, setTodos] = useState([]);
 
-const  addTasks = ()=>{
-  
+const  addTasks = (userInput)=>{
+  if(userInput){
+    const newItem= {
+      id:Math.random().toString(36).substring(2,9),
+      task:userInput,
+      complete:false
+    }
+    setTodos([...todos, newItem])
+  }
 }
 const  removeTasks = ()=>{
 
