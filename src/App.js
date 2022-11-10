@@ -17,7 +17,7 @@ const  addTasks = (userInput)=>{
   }
 }
 const  removeTasks = (id)=>{
-  setTodos([])
+  setTodos([...todos.filter((todo)=> todo.id !== id)])
 }
 const  handleToggle = ()=>{
 
