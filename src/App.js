@@ -16,8 +16,8 @@ const  addTasks = (userInput)=>{
     setTodos([...todos, newItem])
   }
 }
-const  removeTasks = ()=>{
-
+const  removeTasks = (id)=>{
+  setTodos([])
 }
 const  handleToggle = ()=>{
 
