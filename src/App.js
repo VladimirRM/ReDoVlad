@@ -6,7 +6,7 @@ import ToDoForm from "./ToDoForm";
 function App() {
   const [todos, setTodos] = useState([]);
 
-const  addTasks = (userInput)=>{
+const  addTask = (userInput)=>{
   if(userInput){
     const newItem= {
       id:Math.random().toString(36).substring(2,9),
@@ -16,11 +16,13 @@ const  addTasks = (userInput)=>{
     setTodos([...todos, newItem])
   }
 }
-const  removeTasks = (id)=>{
+const  removeTask = (id)=>{
   setTodos([...todos.filter((todo)=> todo.id !== id)])
 }
 const  handleToggle = (id)=>{
-
+     setTodos([
+      ...todos.map((todo)=>todo.id ?{...todo,complete: !todo.complete}: {...todo} )
+     ])
 }
 
   return (
@@ -32,9 +34,11 @@ const  handleToggle = (id)=>{
       {todos.map((todo)=>{
         return(
           <ToDo todo={todo}
-          key={todos.od}/>
+          key={todos.od}
           toggleTask={handleToggle}
           removeTask={removeTask}
+          />
+       
         )}
        ) }
      
