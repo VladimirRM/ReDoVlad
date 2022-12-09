@@ -5,7 +5,29 @@ import './index.css'
 
 const App = () => {
   const [todos, setTodos] = useState([]);
-  return <div className="App"></div>;
+
+
+
+  const addTask =()=>{
+    
+  }
+
+  const removeTask =()=>{
+
+  }
+
+  const handleToggle =()=>{
+
+  }
+  return <div className="App">
+    <header>
+      <h1>Todo List:{todo.length}</h1>
+
+    </header>
+
+
+
+  </div>;
 };
 
 export default App;
