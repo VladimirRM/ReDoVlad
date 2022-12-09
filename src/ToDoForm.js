@@ -8,9 +8,12 @@ const handleChange =(e)=>{
 const handleSubmit =(e)=>{
   e.preventDefault()
   addTask(userInput)
+  setUserInput('')
 
 }
-const handleKeyPress=()=>{
+const handleKeyPress=(e)=>{
+  if(e.key==='Enter')
+  handleSubmit(e)
 
 }
 
