@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-const ToDoForm = () => {
+const ToDoForm = ({addTask}) => {
   return (
     <div>
       
