@@ -6,7 +6,16 @@ import "./index.css";
 const App = () => {
   const [todos, setTodos] = useState([]);
 
-  const addTask = () => {};
+  const addTask = (userInput) => {
+    if (userInput) {
+      const newItem = {
+        id: Math.random().toString(39).substring(2, 9),
+        task: userInput,
+        complete: false,
+      };
+      setTodos([...todos, newItem]);
+    }
+  };
 
   const removeTask = () => {};
 
