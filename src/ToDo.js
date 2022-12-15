@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ToDo = () => {
+const ToDo = ({todo,removeTask,toggleTask}) => {
   return (
-    <div>
+    <div key={todo.id}>
+      <div></div>
+      <div></div>
       
     </div>
   )
