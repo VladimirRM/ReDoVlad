@@ -13,6 +13,7 @@ const App = () => {
         task: userInput,
         complete: true,
       };
+      setTodos([...todos, newTodo]);
     }
   };
   const removeTask = () => {};
