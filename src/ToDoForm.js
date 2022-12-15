@@ -7,7 +7,9 @@ const ToDoForm = ({ addTask }) => {
       <input type="text"
        onChange={handleChange}
        value={userInput}
-       placeholder='Enter someThing...' />
+       placeholder='Enter someThing...'
+       onKeyDown={handleKeyPress}
+       />
     </form>
   );
 };
