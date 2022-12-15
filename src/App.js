@@ -6,7 +6,15 @@ import "./index.css";
 const App = () => {
   const [todos, setTodos] = useState("");
 
-  const addTask = () => {};
+  const addTask = (userInput) => {
+    if (userInput) {
+      const newTodo = {
+        id: Math.random().toString(36).substring(2, 9),
+        task: userInput,
+        complete: true,
+      };
+    }
+  };
   const removeTask = () => {};
   const handleToggle = () => {};
 
