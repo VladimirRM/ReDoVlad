@@ -1,19 +1,15 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 
-const ToDoForm = ({addTask}) => {
-
-  const [userInput,setUserInput]= useState('')
+const ToDoForm = ({ addTask }) => {
+  const [userInput, setUserInput] = useState("");
   return (
     <form onSubmit={handleSubmit}>
       <input type="text"
-      onChange={handleChange}
-
-      
-      
-      
-      />
+       onChange={handleChange}
+       value={userInput}
+       placeholder='Enter someThing...' />
     </form>
-  )
-}
+  );
+};
 
-export default ToDoForm
+export default ToDoForm;
