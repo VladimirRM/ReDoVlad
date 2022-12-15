@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ToDoForm = () => {
+const ToDoForm = ({addTask}) => {
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       
-    </div>
+    </form>
   )
 }
 
