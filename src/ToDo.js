@@ -3,8 +3,8 @@ import React from 'react'
 const ToDo = ({todo,removeTask,handleToggle}) => {
   return (
     <div key={todo.id}>
-      <div></div>
-      <div onClick={removeTask}>Delete</div>
+      <div>{todo.task}</div>
+      <div onClick={removeTask} className='delete-todo'>Delete</div>
       
     </div>
   )
