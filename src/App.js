@@ -35,7 +35,10 @@ const App = () => {
 
       <ToDoForm addTask={addTask} />
       {todos.map((todo) => (
-        <ToDo removeTask={removeTask} todo={todo}
+        <ToDo 
+        removeTask={removeTask} 
+        todo={todo}
+        toggleTask={handleToggle}
         
         
         />
