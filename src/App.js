@@ -34,15 +34,15 @@ const App = () => {
       </header>
 
       <ToDoForm addTask={addTask} />
-      {todos.map((todo) => (
-        <ToDo 
-        removeTask={removeTask} 
-        todo={todo}
-        toggleTask={handleToggle}
-        
-        
-        />
-      ))}
+      {todos.map((todo) => {
+        return (
+          <ToDo
+            key={todo.id}
+            removeTask={removeTask}
+            toggleTask={handleToggle}
+          />
+        );
+      })}
     </div>
   );
 };
