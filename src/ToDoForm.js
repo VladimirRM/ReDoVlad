@@ -7,7 +7,9 @@ const ToDoForm = ({ addTask, todo }) => {
        setUserInput(e.currentTarget.value)
   }
   const handleSubmit =(e)=>{
-     e.
+     e.preventDefault(e)
+     addTask(userInput)
+     setUserInput('')
   }
   const handleKeyPress =()=>{
 
