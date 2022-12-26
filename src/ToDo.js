@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const ToDo = () => {
+const ToDo = ({ todo, removeTask, toggleTask }) => {
   return (
-    <div>ToDo</div>
-  )
-}
+    <div key={todo.id} className="item-todo">
+      <div className={todo.complete ? "item-text strike" : "item-text"}>
+        {todo.task}
+      </div>
+      <div onClick={() => removeTask(todo.id)}></div>
+    </div>
+  );
+};
 
-export default ToDo
+export default ToDo;
