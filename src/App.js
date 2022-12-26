@@ -5,7 +5,14 @@ import "./index.css";
 
 const App = () => {
   const [todos, setTodos] = useState("");
-  const addTask = () => {};
+  const addTask = (userInput) => {
+    const newTodo = {
+      id: Math.random().toString(36).substring(2, 9),
+      task: userInput,
+      complete: false,
+    };
+    setTodos([...todos], newTodo);
+  };
   const removeTask = () => {};
   const handleToggle = () => {};
 
