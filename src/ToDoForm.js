@@ -11,8 +11,10 @@ const ToDoForm = ({ addTask, todo }) => {
      addTask(userInput)
      setUserInput('')
   }
-  const handleKeyPress =()=>{
-
+  const handleKeyPress =(e)=>{
+        if(e.key==='Enter'){
+          setUserInput(e)
+        }
   }
 
   return (
