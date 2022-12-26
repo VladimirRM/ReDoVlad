@@ -12,6 +12,7 @@ const ToDoForm = ({ addTask, todo }) => {
         onKeyDown={handleKeyPress}
         placeholder="Enter something"
       />
+      <button>Add</button>
     </form>
   );
 };
