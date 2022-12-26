@@ -13,7 +13,9 @@ const App = () => {
     };
     setTodos([...todos], newTodo);
   };
-  const removeTask = () => {};
+  const removeTask = (id) => {
+    setTodos([...todos].filter((todo)=>todo.id !==id))
+  };
   const handleToggle = () => {};
 
   return (
