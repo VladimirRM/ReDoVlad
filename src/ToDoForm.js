@@ -5,7 +5,13 @@ const ToDoForm = ({ addTask, todo }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={userInput} />
+      <input
+        type="text"
+        value={userInput}
+        onChange={handleChange}
+        onKeyDown={handleKeyPress}
+        placeholder="Enter something"
+      />
     </form>
   );
 };
