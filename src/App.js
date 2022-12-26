@@ -15,7 +15,14 @@ const App = () => {
         <h1>Todo List:{todos.length}</h1>
       </header>
       <ToDoForm addTask={addTask} />
-           {todos.map((todo)=>)}
+      {todos.map((todo) => (
+        <ToDo
+          removeTask={removeTask}
+          key={todo.id}
+          toggleTask={handleToggle}
+          todo={todo}
+        />
+      ))}
     </div>
   );
 };
