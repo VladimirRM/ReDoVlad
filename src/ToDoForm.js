@@ -2,7 +2,10 @@ import React from 'react'
 
 const ToDoForm = ({addTask,todo}) => {
   return (
-    <div>ToDoForm</div>
+    <form onSubmit={handleSubmit}>
+      <input type="text"
+      value={userInput} />
+    </form>
   )
 }
 
