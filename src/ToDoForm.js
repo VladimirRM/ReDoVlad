@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ToDoForm = () => {
+const ToDoForm = ({addTask,todo}) => {
   return (
     <div>ToDoForm</div>
   )
